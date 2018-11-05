@@ -211,14 +211,14 @@ namespace loc{
                 double d = randomGenerator->nextDouble();
                 double sumw = 0;
                 int floorGen = std::numeric_limits<int>::max();
-                for(int i=0; i<weights.size(); i++){
-                    sumw+=weights.at(i);
+                for(int j=0; j<weights.size(); j++){
+                    sumw+=weights.at(j);
                     if(d<=sumw){
-                        floorGen = floors.at(i);
+                        floorGen = floors.at(j);
                         break;
                     }
-                    if(i==weights.size()-1){
-                        floorGen = floors.at(i);
+                    if(j==weights.size()-1){
+                        floorGen = floors.at(j);
                     }
                 }
                 assert(floorGen != std::numeric_limits<int>::max());
