@@ -16,4 +16,12 @@ Would be glad to understand why that is happening.
    
 4. What kind of a map is predict function returning in LogLikelhood estimation. I have an overview of it but not clear in that part. 
 
+## Updates: 12 Jan 2019 
+
+1. What do we mean by a global heading and a local heading? 
+
+2. OrientationAdjuster.hpp
+    Line 101, 102 why cos by sin 
+    How accuracy is the standard deviation (line 114)
+
 
